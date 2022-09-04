@@ -13,3 +13,6 @@ const orders = [
 const highPriorityCount = orders.filter(
   (o) => 'high' === o.priority || 'rush' === o.priority
 ).length;
+
+console.log(orders);
+console.log(highPriorityCount);

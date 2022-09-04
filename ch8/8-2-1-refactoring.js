@@ -1,7 +1,7 @@
 export class Customer {
   #name;
   #contract;
-  constructor(name) {
+  constructor(name, discountRate) {
     this.#name = name;
     this.#contract = new CustomerContract(this.dateToday(), discountRate);
   }
@@ -20,7 +20,7 @@ export class Customer {
   }
 }
 
-class CustomerContract {
+class CustomerContract { 
   #startDate;
   #discountRate;
   constructor(startDate, discountRate) {
@@ -30,5 +30,9 @@ class CustomerContract {
 
   get discountRate() {
     return this.#discountRate;
+  }
+
+  set discountRate(value) {
+    this.#discountRate = value;
   }
 }

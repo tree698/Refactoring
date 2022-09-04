@@ -16,6 +16,7 @@ class Organization {
   //   }
 
   get rawData() {
+    // this.name => get name() 호출
     return { name: this.name, country: this.country };
     // set name(name)이 없을 경우
     // return { ...this.#data }; => 얕은 복사 => lodash -> cloneDeep
@@ -40,3 +41,4 @@ const organization = new Organization({
 // const organization = new Organization('Acme Gooseberries', 'GB');
 
 console.log(organization.country);
+console.log(organization.rawData);

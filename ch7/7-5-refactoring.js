@@ -1,9 +1,9 @@
 class Person {
   #name;
   #telephoneNumber;
-  constructor(name, areaCode, number) {
+  constructor(name, telephone) {
     this.#name = name;
-    this.#telephoneNumber = new TelephoneNumber(areaCode, number);
+    this.#telephoneNumber = telephone;
   }
 
   get name() {
@@ -50,7 +50,7 @@ class TelephoneNumber {
   }
 }
 
-const person = new Person('엘리', '010', '12345678');
+const person = new Person('엘리', new TelephoneNumber('010', '12345678'));
 console.log(person.name);
 console.log(person.officeAreaCode);
 console.log(person.officeNumber);

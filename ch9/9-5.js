@@ -10,8 +10,9 @@ class Order {
 }
 
 class Customer {
-  constructor(id) {
+  constructor(id, name) {
     this._id = id;
+    this._name = name;
   }
 
   get id() {

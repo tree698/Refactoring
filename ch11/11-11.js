@@ -7,7 +7,9 @@ export function ascentVelocity(points, totalMinutes) {
   }
 
   let totalAscent = 0;
-  calculateAscent([{ elevation: 10 }, { elevation: 20 }]);
+  calculateAscent([{ elevation: 10 }, { elevation: 20 }], 1); // ???? 함수 매개변수 ??
 
   return totalAscent / totalMinutes;
 }
+
+// console.log(ascentVelocity([{ elevation: 10 }, { elevation: 20 }], 1));

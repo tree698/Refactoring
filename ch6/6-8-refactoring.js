@@ -15,14 +15,14 @@ const operationPlan = {
 };
 
 // refactoring 1.
-export function readingsOutsideRange1(readings, range) {
-  return readings.filter(
-    (r) => r.temp < range.temperatureFloor || r.temp > range.temperatureCeiling
-  );
-}
+// export function readingsOutsideRange1(readings, range) {
+//   return readings.filter(
+//     (r) => r.temp < range.temperatureFloor || r.temp > range.temperatureCeiling
+//   );
+// }
 
-const result1 = readingsOutsideRange1(station.readings, operationPlan);
-console.log(result1);
+// const result1 = readingsOutsideRange1(station.readings, operationPlan);
+// console.log(result1);
 
 // refactoring 2.
 
