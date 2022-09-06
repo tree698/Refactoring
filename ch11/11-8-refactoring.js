@@ -14,7 +14,19 @@ export class Employee {
   static get legalTypeCodes() {
     return { E: 'Engineer', M: 'Manager', S: 'Salesman' };
   }
+
+  static createEmgineer(name) {
+    return new Employee(name, 'E');
+  }
+
+  static createManager(name) {
+    return new Employee(name, 'M');
+  }
+
+  static createSaleman(name) {
+    return new Employee(name, 'S');
+  }
 }
 
-const manager = new Employee('Ellie', 'M');
+const manager = Employee.createManager('Ellie');
 console.log(manager.type);
