@@ -1,27 +1,28 @@
-class Party {}
+class Party {
+  #name;
+  constructor(name) {
+    this.#name = name;
+  }
+}
 
 class Employee extends Party {
-  #name;
   #id;
   #monthlyCost;
   constructor(name, id, monthlyCost) {
-    super();
-    this.#name = name;
+    super(name);
     this.#id = id;
     this.#monthlyCost = monthlyCost;
   }
 
-  get name() {
-    return this.#name;
+  get id() {
+    return this.#id;
   }
 }
 
 class Department extends Party {
-  #name;
   #staff;
   constructor(name, staff) {
-    super();
-    this.#name = name;
+    super(name);
     this.#staff = staff;
   }
 }
@@ -29,4 +30,4 @@ class Department extends Party {
 const ellie = new Employee('엘리', 123, 13);
 const department = new Department('개발부서', ellie);
 
-console.log(ellie.name);
+console.log(ellie.id);
