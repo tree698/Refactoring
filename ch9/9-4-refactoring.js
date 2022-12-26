@@ -57,6 +57,7 @@ class TelephoneNumber {
 }
 
 const person = new Person('엘리', '010', '12345678');
+// person.telephoneNumber.number = '999';
 console.log(person.name);
 console.log(person.officeAreaCode);
 console.log(person.officeNumber);

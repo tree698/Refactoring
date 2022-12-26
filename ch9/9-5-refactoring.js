@@ -1,5 +1,5 @@
 const customerRepository = new CustomerRepository();
-const oder = new Order(
+const order = new Order(
   data.number,
   customerRepository.registerCustomer(data.customerId)
 );
