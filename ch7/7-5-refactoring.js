@@ -1,3 +1,5 @@
+// 클래스 추출하기
+// 클래스는 가급적 한가지 일만 담당 -> 전화번호 만드는 로직을 추출
 class Person {
   #name;
   #telephoneNumber;

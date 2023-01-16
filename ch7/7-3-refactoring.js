@@ -1,4 +1,5 @@
 // need to check further refactoring
+// 문제: filter 로직이 밖으로 나와 있다
 
 export class Order {
   constructor(data) {

@@ -29,3 +29,33 @@ function countOrders({ fileName, countReadyOnly }) {
     : orders;
   console.log(filtered.length);
 }
+
+// my second try...
+// function displayStatusOfReady(arrayOfArgv) {
+//   const rawData = fetchRawData(arrayOfArgv);
+//   const statusOfReady = checkStatus(rawData);
+//   return statusOfReady;
+// }
+
+// function fetchRawData(arrayOfArgv) {
+//   if (!arrayOfArgv[2]) {
+//     throw new Error('enter the filename');
+//   }
+//   const fileName = `./${arrayOfArgv[2]}.json`;
+//   if (!fs.existsSync(fileName)) {
+//     throw new Error('no exists the file');
+//   }
+//   return fs.readFileSync(fileName);
+// }
+
+// function checkStatus(rawData) {
+//   const orders = JSON.parse(rawData);
+//   if (process.argv.includes('-r')) {
+//     console.log(orders.filter((order) => order.status === 'ready').length);
+//   } else {
+//     console.log(orders.length);
+//   }
+// }
+
+// const arrayOfArgv = process.argv;
+// displayStatusOfReady(arrayOfArgv);

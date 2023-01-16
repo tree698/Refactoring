@@ -1,3 +1,6 @@
+// 문제: console.log(person.department.manager) => 사용자에게 person.department를 노출시킴
+// person.manager가 되도록 리팩토링
+
 class Person {
   #name;
   #department;

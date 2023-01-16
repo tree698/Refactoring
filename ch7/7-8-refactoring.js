@@ -1,3 +1,5 @@
+// Department 클래스는 복잡한 로직을 가지고 있지 않는 단순 데이터만 가지고 있으므로 하나로 만듦
+
 class Person {
   #name;
   #manager;

@@ -1,8 +1,8 @@
 class Customer {
-  constructor() {
-    this.discountRate = 0;
+  constructor(discountRate) {
+    this.discountRate = discountRate;
   }
   applyDiscount(number) {
-    return this.discountRate ? number - this.discountRate * number : number;
+    return this.discountRate > 1 ? number - this.discountRate * number : number;
   }
 }

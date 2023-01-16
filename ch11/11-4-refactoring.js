@@ -1,6 +1,6 @@
 export function temperatureAlerts(room, plan) {
   const alerts = [];
-  if (!plan.withinRange(daysTempRange)) {
+  if (!plan.withinRange(room.daysTempRange)) {
     alerts.push('room temperature went outside range');
   }
 
